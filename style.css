@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+@font-face {
+    font-family:'Red-Hat-Display';
+    src: "https://fonts.google.com/specimen/Red+Hat+Display)";
+    font-weight: 500, 700, 900;
+}
+/* body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+} */
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+  }
+  .container
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    background-image:url('images/illustration-hero.svg');
+    background-size:22rem auto;
+    background-repeat: no-repeat;
+    background-color:white;
+    padding: 2em;
+    border-radius: 10px;
+  }
+  .order-section h3
+  {
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+  }
+  .container .col-1
+  {
+    color: var(--dark-blue);
+  }
+  p
+  {
+    font-size: 16px;
+    line-height: 1.5em;
+    color:var(--desaturated-blue);
+  }
+  .annual-section
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4em;
+    margin: 1.7em 0;
+    background-color: hsla(228, 100%, 98%, 0.795);
+    padding: 25px;
+    border-radius: 10px;
+  }
+  .annual-section .icon-anu
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+  }
+  .annual-section a
+  {
+    color: var(--bright-blue);
+  }
+  .annual-section a:hover
+  {
+    color: hsl(225, 62%, 59%);
+  }
+  button
+  {
+    background-color: var(--bright-blue);
+    border: none;
+    padding:1em 6em;
+    border-radius:10px;
+    box-shadow: 1px 10px 10px 2px var(--pale-blue);
+    color: var(--very-pale-blue);
+    margin-bottom: 1.5em;
+  }
+  button:hover
+  {
+    background-color:hsl(225, 62%, 59%); 
+  }
+  span
+  {
+    color: var(--desaturated-blue);
+  }
+  span:hover
+  {
+    color: var(--dark-blue);
+  }
+
+@media (max-width:500px) {
+    body{
+        height: auto;
+        padding:3em 1em;
+    }
+    .container{
+        width: 100%; 
+    }
+    
+}
